@@ -23,7 +23,7 @@ const LoginPage = () => {
 	} = useMutation({
 		mutationFn: async ({ username, password }) => {
 			try {
-				const res = await fetch("/api/auth/login", {
+				const res = await fetch("https://twitter-like-social-media-platform-mern-fat8.onrender.com/api/auth/login", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
